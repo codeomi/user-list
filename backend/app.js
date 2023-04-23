@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { fetchUsers } = require("./config/fetchUsers");
+const errrorMiddleware = require("./middleware/error");
 
 const userRoutes = require("./routes/userRoutes");
 
@@ -15,6 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/v1", userRoutes);
 
 //middleware for error
-// app.use(errrorMiddleware);
+app.use(errrorMiddleware);
 
 module.exports = app;

@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
   income: {
-    type: Number,
+    type: String,
   },
   city: {
     type: String,
