@@ -1,16 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./tableCard.css";
-import { Link, useParams } from "react-router-dom";
-import { listAction1 } from "../../store/action";
-import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 const TableCard = ({ heading, description }) => {
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   if (heading) {
-  //     dispatch(listAction1(heading));
-  //   }
-  // }, [dispatch, heading]);
   return (
     <>
       <Link path="/table/:id" to={`/table/${heading}`} className="linktag">

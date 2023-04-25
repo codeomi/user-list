@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+}
+.topcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.backButton {
+  border-radius: 2vw;
+
+  transition: all 0.3s;
+}
+.backButton:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.heading-container {
+  margin-bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.underline {
+  border-bottom: 0.1vw solid black;
+  width: 4vw;
+}
+
+.MuiDataGrid-columnHeader div {
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+}

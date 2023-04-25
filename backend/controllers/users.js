@@ -105,5 +105,5 @@ exports.fifthRequirement = catchAsyncError(async (req, res, next) => {
 
   res
     .status(200)
-    .json({ success: true, responses: result.length, data: result });
+    .json({ success: true, responses: result.length, users: result });
 });

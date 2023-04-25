@@ -1,8 +1,7 @@
 import React from "react";
 import "./dashboard.css";
 import TableCard from "./TableCard";
-import { useDispatch } from "react-redux";
-import { listAction1 } from "../../store/action";
+
 
 const cards = [
   {
