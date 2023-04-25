@@ -1,3 +1,7 @@
 export const INITIAL="INITIAL"
 export const LIST_1="LIST_1"
+export const LIST_2="LIST_2"
+export const LIST_3="LIST_3"
+export const LIST_4="LIST_4"
+export const LIST_5="LIST_5"
 export const ERROR="ERROR"

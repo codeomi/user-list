@@ -5,14 +5,12 @@ import { listAction1 } from "../../store/action";
 import { useDispatch } from "react-redux";
 
 const TableCard = ({ heading, description }) => {
-  const dispatch = useDispatch();
-  const params = useParams();
-  console.log(heading);
-  useEffect(() => {
-    if (heading === 1) {
-      dispatch(listAction1());
-    }
-  }, [dispatch, heading]);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   if (heading) {
+  //     dispatch(listAction1(heading));
+  //   }
+  // }, [dispatch, heading]);
   return (
     <>
       <Link path="/table/:id" to={`/table/${heading}`} className="linktag">
