@@ -36,7 +36,7 @@ const Dashboard = () => {
       <div className="container">
         <div className="heading">
           Choose the Category of Users
-          <span className="underline"></span>
+          
         </div>
         <div className="tableCarContainer">
           {cards?.map((card) => (
