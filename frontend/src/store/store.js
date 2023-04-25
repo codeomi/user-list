@@ -4,7 +4,7 @@ import { composeWithDevTools } from "@redux-devtools/extension";
 import { initialReducer } from "./reducer";
 
 const reducers = combineReducers({
-initial:initialReducer
+userList:initialReducer
 });
 
 const initialState = {};

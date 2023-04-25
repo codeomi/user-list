@@ -1,12 +1,21 @@
-import {INITIAL} from "./constants"
+import {ERROR, LIST_1} from "./constants"
 
 export const initialReducer = (
-    state = { language: "javascript", success: false },
+    state = { list: {} },
     action
   ) => {
     switch (action.type) {
-      case INITIAL:
-    return {}
+      case LIST_1:
+    return {
+      ...state,
+      list:action.payload.users.users
+    }
+
+    case ERROR :
+      return{
+        ...state,
+        error:action.payload
+      }
   
       default:
         return state;

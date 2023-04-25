@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./tableCard.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { listAction1 } from "../../store/action";
+import { useDispatch } from "react-redux";
 
-const TableCard = () => {
+const TableCard = ({ heading, description }) => {
+  const dispatch = useDispatch();
+  const params = useParams();
+  console.log(heading);
+  useEffect(() => {
+    if (heading === 1) {
+      dispatch(listAction1());
+    }
+  }, [dispatch, heading]);
   return (
     <>
-      <Link to="table1" className="linktag">
-      <div className="card-container">
-        <div className="heading">Table - 1</div>
-        <div className="descriptions">
-          Users which have income lower than $5 USD and have a car of brand
-          “BMW” or “Mercedes”.
+      <Link path="/table/:id" to={`/table/${heading}`} className="linktag">
+        <div className="card-container">
+          <div className="heading">{heading}</div>
+          <div className="descriptions">{description}</div>
         </div>
-      </div>
       </Link>
     </>
   );
