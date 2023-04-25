@@ -13,12 +13,4 @@ const server = app.listen(process.env.PORT, () => {
   console.log(`Serever is workking on https://localhost:${process.env.PORT}`);
 });
 
-// //unhandled promise
-// process.on("unhandledRejection", (err) => {
-//   console.log(`Error: ${err.message}`);
-//   console.log("Shutting Down Server due to unhandled promise");
 
-//   server.close(() => {
-//     process.exit(1);
-//   });
-// });

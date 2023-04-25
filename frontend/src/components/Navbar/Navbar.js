@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
    <>
     <div className="Navbar">
-        <Link target='#' to="https://github.com/codeomi">Source</Link>
+        <Link target='#' to="https://github.com/codeomi/user-list">Source</Link>
         <Link target='#' to="https://github.com/codeomi">About Me</Link>
     </div>
    

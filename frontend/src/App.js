@@ -14,7 +14,7 @@ dispatch(listAction1())
       <Router>
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
-          <Route path="/table/:id" element={<Table />} />
+          <Route path="/table/:id" element={<Table />} /> 
         </Routes>
         <Navbar/>
       </Router>

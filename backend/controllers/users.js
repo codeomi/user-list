@@ -3,6 +3,7 @@ const sampleData = require("../../sample_data.json");
 const ErrorHandler = require("../utils/ErrorHandler");
 const catchAsyncError = require("../middleware/catchAsyncError");
 
+//Fetches all the users from the data
 exports.fetchAllUsers = async (req, res, next) => {
   const users = await User.find();
   if (!users) {

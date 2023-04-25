@@ -1,3 +1,5 @@
+//CardComponent visible on dashboard
+
 import React from "react";
 import "./tableCard.css";
 import { Link } from "react-router-dom";
