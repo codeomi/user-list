@@ -8,11 +8,12 @@ import Loader from "../Loader/Loader";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Table = () => {
-  const { id } = useParams();
+  const { id } = useParams(); //id of which card was clicked
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { list, responses } = useSelector((state) => state.userList);
 
+  //column for first 4 req
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -69,6 +70,7 @@ const Table = () => {
     },
   ];
 
+  //column for last req
   const column2 = [
     {
       field: "count",
@@ -93,6 +95,7 @@ const Table = () => {
 
   const rows = [];
 
+  //row for last req
   const rows2 = [];
   if (Array.isArray(list)) {
     list.forEach((user, index) => {
@@ -104,6 +107,7 @@ const Table = () => {
     });
   }
 
+  //row for first 4 req
   if (Array.isArray(list)) {
     list.forEach((user, index) => {
       rows.push({
@@ -123,9 +127,11 @@ const Table = () => {
     });
   }
 
+  //tells you which row or column to use according to requirement
   const tableColumns = id !== "5" ? columns : column2;
   const tableRows = id !== "5" ? rows : rows2;
 
+  //re-navigates to home
   const handleBackClick = () => {
     navigate("/");
   };
