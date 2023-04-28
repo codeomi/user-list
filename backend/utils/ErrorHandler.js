@@ -1,3 +1,4 @@
+//extends the existing Error class from js and add status code to it
 class ErrorHandler extends Error {
     constructor(message, statusCode){
         super(message)

@@ -14,7 +14,7 @@ const middleWare = [thunk];
 const store = createStore(
   reducers,
   initialState,
-  composeWithDevTools(applyMiddleware(...middleWare))
+  composeWithDevTools(applyMiddleware(...middleWare)) //to check state on chrome
 );
 
 export default store;
